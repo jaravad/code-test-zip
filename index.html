@@ -19,11 +19,18 @@
   </head>
   <body>
     <h1>Zip Code</h1>
-    <form action="">
+    <form action="" id="zip-form">
       <label for="zip">Enter a Zip code</label>
-      <input type="text" placeholder="Zip code" />
+      <input
+        type="text"
+        id="zip"
+        name="zip"
+        placeholder="Zip code"
+        autocomplete="off"
+      />
       <button type="submit">Get details</button>
     </form>
+    <pre id="output"></pre>
     <script src="script.js"></script>
   </body>
 </html>
