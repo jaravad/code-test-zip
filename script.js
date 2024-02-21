@@ -12,6 +12,7 @@ form.addEventListener('submit', async (event) => {
     const formData = new FormData(event.target);
     const zipCode = formData.get('zip');
     if (zipCode === '') return;
+    // clean input, get rid of previous result or errors if any
     input.value = '';
     outputContainer.innerHTML = '';
     let errors = document.querySelectorAll('.error');
@@ -35,6 +36,7 @@ form.addEventListener('submit', async (event) => {
     });
     outputContainer.appendChild(countryHeader);
     outputContainer.appendChild(placesSubtitle);
+    // Iterate over places in case there are several of them in the array
     parsedData.places.map((place, i) => {
       const placeDiv = createElement({
         type: 'div',
@@ -81,6 +83,7 @@ form.addEventListener('submit', async (event) => {
       className: 'error',
       text: 'An error has ocurred',
     });
+    // show error message
     container.appendChild(errorDiv);
     console.log(e);
   }
