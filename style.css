@@ -13,7 +13,7 @@ body {
 }
 
 .container {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   max-width: 400px;
   padding: 2rem 0.5rem;
@@ -23,6 +23,10 @@ body {
   text-align: center;
   font-size: 3rem;
   margin-bottom: 1.5rem;
+}
+
+.form {
+  margin-bottom: 1rem;
 }
 
 .label,
@@ -56,4 +60,31 @@ body {
 button:hover {
   background-color: #1773cd;
   border: 1px solid #1773cd;
+}
+
+.output-container {
+  border: 1px solid #dedede;
+  border-radius: 6px;
+  padding: 0.5rem;
+}
+
+.country-header {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.places-subtitle {
+  margin-bottom: 0.5rem;
+}
+
+.place-name-subtitle {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.divider {
+  border-style: solid;
+  border-color: lightgray;
+  border-width: 0.5px;
 }

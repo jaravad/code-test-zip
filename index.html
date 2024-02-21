@@ -18,9 +18,9 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
+    <div class="container" id="container">
       <h1 class="title">Zip Codes</h1>
-      <form action="" id="zip-form">
+      <form action="" id="zip-form" class="form">
         <label for="zip" class="label">Enter a valid zip code</label>
         <input
           type="text"
@@ -29,10 +29,10 @@
           placeholder="Zip code"
           autocomplete="off"
           class="input"
+          value="90210"
         />
         <button type="submit" class="button">Get details</button>
       </form>
-      <pre id="output"></pre>
     </div>
     <script src="script.js"></script>
   </body>
