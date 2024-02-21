@@ -74,6 +74,17 @@ button:hover {
   font-weight: bold;
 }
 
+.place-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.place-text-container {
+  flex-shrink: 0;
+  max-width: 100%;
+}
+
 .places-subtitle {
   margin-bottom: 0.5rem;
 }
